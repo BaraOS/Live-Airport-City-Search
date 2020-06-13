@@ -23,3 +23,5 @@ node app.js
 * Express.JS
 * Node.JS
 * jQuery 
+
+![Alt text](https://github.com/BaraOS/Live-Airport-City-Search/blob/master/readme_media/live_search.gif?raw=true)
