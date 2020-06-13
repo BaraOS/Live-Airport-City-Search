@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.theme.min.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+   <form class="form-inline">
+      <label for="text">Origin: 
+      <input type="text" class="searchName" placeholder="traveling from" name="origin">
+      </label>
+
+      <label for="text">Destination:  
+      <input type="text" class="searchName" placeholder="traveling to" name="Destination">
+      </label>
+
+      <label for="text">Depature Date:  
+      <input type="date" class="" name="depart_date">
+      </label>
+
+      <label for="text">Return Date:  
+      <input type="date" class="" name="return_date">
+      </label>
+
+      <label for="text">Adult(s):  
+      <input type="number" class="" name="NumberOfAdults">
+      </label>
+
+      
+      <button type="submit">Submit</button>
+   </form>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+      $(function(){
+         $('.searchName').autocomplete({
+            source: function(req, res){
+               $.ajax({
+                  url:"airportSearch/",
+                   dataType: "json",
+                   type:"GET",
+                   data:req,
+                   success: function (data){
+                     res($.map(data, function(el){
+                        return {
+                           label: el.address.cityName +', ' +  el.name + ' (' + el.iataCode +')',
+                           value: el.iataCode
+                        }
+                     }));
+                   },
+                   error: function(err){
+                     console.log(err.status);
+                   }
+               });
+            }        
+         });
+       });
+    </script>
+  
+   </body>
+</html>
