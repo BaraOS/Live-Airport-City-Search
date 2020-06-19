@@ -19,7 +19,16 @@ clientSecret= 'secret'
 npm install
 ```
 
-3. Start the server
+3. Add your Amadeus credentials to the app.js file in this section:
+
+```js
+var amadeus = new Amadeus({
+  clientId: '',
+  clientSecret: ''
+});
+```
+
+4. Start the server
 
 ```
 node app.js
