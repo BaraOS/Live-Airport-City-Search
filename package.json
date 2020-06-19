@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amadeus4dev/Live-Airport-City-Search.git"
+    "url": "git+https://github.com/BaraOS/Live-Airport-City-Search.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amadeus4dev/Live-Airport-City-Search/issues"
+    "url": "https://github.com/BaraOS/Live-Airport-City-Search/issues"
   },
-  "homepage": "https://github.com/amadeus4dev/Live-Airport-City-Search#readme",
+  "homepage": "https://github.com/BaraOS/Live-Airport-City-Search#readme",
   "dependencies": {
     "amadeus": "^5.1.0",
     "ejs": "^3.1.3",
