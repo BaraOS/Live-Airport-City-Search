@@ -34,6 +34,8 @@ var amadeus = new Amadeus({
 node app.js
 ```
 
+5. Access over http://localhost:3000/
+
 # Built Using
 * Express.JS
 * Node.JS
