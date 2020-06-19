@@ -26,7 +26,7 @@ amadeus.referenceData.locations.get({
   subType: 'AIRPORT,CITY'
 }).then(function(response){
   res.json(response.data);
-  console.log(response.data.iataCode);
+  console.log(response.data);
 }).catch(function(error){
   console.log("error");
   console.log(error.response);
