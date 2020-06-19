@@ -1,0 +1,24 @@
+{
+  "name": "live-airport-city-search",
+  "version": "1.0.0",
+  "description": "This application lets you perform a live search for Airports and Cities through the Amadeus [Airport & City Search API](https://developers.amadeus.com/self-service/category/air/api-doc/airport-and-city-search). The implementation is done through jQuery Autocomplete with Node and Express as the backend for which connects ot the Amadeus API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaraOS/Live-Airport-City-Search.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaraOS/Live-Airport-City-Search/issues"
+  },
+  "homepage": "https://github.com/BaraOS/Live-Airport-City-Search#readme",
+  "dependencies": {
+    "amadeus": "^5.1.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  }
+}
