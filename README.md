@@ -13,7 +13,13 @@ and paste it within App.js
 clientId= 'id'
 clientSecret= 'secret'
 ```
-2. Start the server
+2. Install dependencies
+
+```
+npm install
+```
+
+3. Start the server
 
 ```
 node app.js
